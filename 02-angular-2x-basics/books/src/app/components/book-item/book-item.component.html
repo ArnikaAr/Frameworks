@@ -1,0 +1,13 @@
+<div class="book">
+  <p>{{book.title}}</p>
+  <p>{{book.subtitle}}</p>
+  <div class="mainInfo">
+    <img src="{{book.src}}" alt="">
+    <p>{{book.desc}}</p>
+  </div>
+  <div class="extraInfo">
+    <p>{{book.author}}</p>
+    <p>{{book.data}}</p>
+    <button (click)="onAddMyBook(book)" class="add">Add</button>
+  </div>
+</div>

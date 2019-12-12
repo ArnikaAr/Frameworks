@@ -1,0 +1,20 @@
+<app-add-books
+  (addBook)="addBook($event)"
+></app-add-books>
+<div class="lists">
+  <div class="globalList">
+    <app-book-item
+      *ngFor='let book of books'
+      [book]='book'
+    >
+    </app-book-item>
+  </div>
+  <div class="myList">
+    <app-my-book-item
+      *ngFor='let book of myBooks'
+      [book]='book'
+      (deleteBook)="deleteBook($event)"
+    >
+    </app-my-book-item>
+  </div>
+</div>

@@ -1,0 +1,12 @@
+.lists{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.globalList,
+.myList{
+  margin: 0;
+  width: 100%;
+}
+
+
